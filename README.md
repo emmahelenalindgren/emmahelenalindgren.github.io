@@ -1,9 +1,4 @@
 
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Page title</title>
-</head>
 <body>
 	<h1>Övning 1</h1>
         <h3>Vad jag lärt mig</h3>
