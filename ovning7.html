@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Övning 7</title>
+    <style>
+    
+    body {
+        font-family: Verdana;
+        background-image: url(http://az616578.vo.msecnd.net/files/2016/03/23/635943566212276867210249251_concert-crowd.jpg);
+    }
+    
+   
+    
+    p {
+        font-size: 14px;
+    }
+    
+    header .rules {
+        font-style: italic;
+        font-size: 12px;
+    }
+    
+    label {
+        margin-top: 10px;
+        font-size: 14px;
+    }   
+    
+    
+    form {
+        margin-top: 10px;
+    }
+    
+    header {
+        background-color: white;
+        opacity: 0.1;
+            font-size:3em;
+        height: 300px;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    header .about {
+        width: 70%;
+        opacity: 10;
+        color:red;
+        font-size:0.33em;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .formular {
+        padding-bottom: 20px;
+        padding-top: 20px;
+          margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    width: 80%;
+    }
+</style> 
+</head>
+
+    
+    
+<body>
+<header>
+    <div class="about">
+    <h1>TÄVLING</h1>
+    <h2>Vill du vinna biljetter till konserten med världens just nu största artist?</h2>
+    <p>Fyll i formuläret nedan och skicka in</p>
+    <p class="rules">OBS! Du måste vara 18 år för att delta. Vinnaren utses 24/12 och kontaktas via mail.</p>
+    </div>
+</header>
+<main>  
+    <div class="formular">
+<form>
+    <label for="input1">Skriv ditt användarnamn</label>
+    <input type="text" id="input1" placeholder="Användarnamn" />
+</form>    
+<form>
+    <label for="input2">Skriv ditt lösenord</label>
+    <input type="password" id="input2" placeholder="Lösenord" />
+</form>
+    <form>
+    <label for="input3">Namn</label>
+    <input type="text" id="input3" placeholder="Fullständigt namn" />
+</form>
+    <form>
+    <label for="input4">Adress</label>
+    <input type="text" id="input4" placeholder="Din adress" />
+</form>
+    <form>
+    <label for="input5">E-post</label>
+    <input type="text" name="input5" placeholder="namn@mail.se" />
+</form>
+    <form>
+    <label for="input6">Telefonnummer</label>
+    <input type="text" name="input6" placeholder="1234567890" />
+</form>
+    
+    <p>Om du vinner en biljett, vilken färg på t-shirten vill du då ha?</p>
+    
+<form>
+    <input type="radio" name="rad" id="rad1"/> <label for="rad1">Blå</label> <br>
+    <input type="radio" name="rad" id="rad2"/> <label for="rad2">Rosa</label> <br>
+    <input type="radio" name="rad" id="rad3"/> <label for="rad3">Svart</label> <br> <br>
+</form>
+ 
+<form>    
+    <label for="select">Om du vinner en biljett, vilken arena vill du gå på?</label><br>
+    <select>
+<optgroup label="Göteborg">
+	<option>Scandinavium</option>
+	<option>Nya Ullevi</option>
+</optgroup>
+<optgroup label="Stockholm">
+	<option>Hovet</option>
+	<option>Globen</option>
+</optgroup>
+</select>
+</form>
+<form>
+    <label for="mylist">Hur fick du veta om tävlingen</label> <br>
+    <datalist id="mylist">
+	<option selected>Sociala medier</option>
+	<option>En vän</option>
+	<option>Annat</option>
+</datalist>
+<input type="text" list="mylist" />
+    </form>
+<form>
+    <label for="motivation">Berätta kort om dig själv och varför du vill vinna biljetterna:</label><br>
+    <textarea rows="4" name="motivation" cols="50" placeholder="Motivera..."></textarea>
+</form>    
+   
+ <form>
+    <button>Läs villkoren igen</button> 
+	<input type="submit" value="Skicka in" />
+ 
+</form>	
+        </div>
+    </main>
+    
+</body>
+</html>	
