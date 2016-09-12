@@ -15,8 +15,34 @@
     p {
         font-size: 16px;
     }
+	
+	header {
+		text-align: center;}
+	
+	
+	ul {
+		width:100%;
+		display:block;
+		list-style-type: none;
+		padding: 0;}
+	
+	
+	li {
+		display:inline-block;
+		text-transform: uppercase;
+		background-color: black;
+		padding: 10px;
+		margin:15px;}
+		
+	
+	
+		
+	li a {
+		color: #ffffff;
+		text-decoration:none;
+		}	
     
-    header .rules {
+    .intro .rules {
         font-style: italic;
         font-size: 12px;
     }
@@ -32,14 +58,14 @@
     margin-bottom: 10px;
     }
     
-    header {
+    .intro {
         height: 300px;
         width: 80%;
         text-align: center;
         margin: auto;
     }
     
-    header .about {
+    .intro .about {
         width: 70%;
         color: #ffffff;
         font-size:0.33em;
@@ -47,17 +73,17 @@
         padding: 20px;
     }
 	
-	header .about h1 {
+	.intro .about h1 {
 		font-size: 35px;
 		}
 		
-		header .about h2 {
+		.intro .about h2 {
 		font-size: 25px;
 		}
 		
 	.background-info {
 		    background-color: #ffffff;
-    width: 80%;
+    width: 40%;
     margin: auto;
     opacity: 0.8;
 	}	
@@ -70,6 +96,11 @@
 	    margin-bottom: 30px;
     width: 80%;
     }
+	
+	
+	button a {
+		text-decoration: none;
+		color: black;}
 </style> 
 </head>
 
@@ -77,13 +108,22 @@
     
 <body>
 <header>
+<nav>
+<ul>
+  <li><a href="#">Startsida</a></li>
+  <li><a href="#">Tävling</a> </li>
+  <li><a href="#">Villkor och regler</a> </li>
+ </ul> 
+</nav>
+</header>
+<div class="intro">
     <div class="about">
     <h1>TÄVLING</h1>
     <h2>Vill du vinna biljetter till konserten med världens just nu största artist?</h2>
     <p>Fyll i formuläret nedan och skicka in</p>
     <p class="rules">OBS! Du måste vara 18 år för att delta. Vinnaren utses 24/12 och kontaktas via mail.</p>
     </div>
-</header>
+</div>
 <main class="background-info">  
     <div class="formular">
 <form>
