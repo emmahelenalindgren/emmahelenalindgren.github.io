@@ -97,6 +97,11 @@
 	    margin-bottom: 30px;
     width: 80%;
     }
+
+        .mellanrum {
+                margin-top: 10px;
+    margin-bottom: 10px;
+        }
 	
 	
 	button a {
@@ -128,38 +133,38 @@
 <main class="background-info">  
     <div class="formular">
 <form>
-    <label for="input1">Skriv ditt användarnamn</label>
+
+    <div class="mellanrum"><label for="input1">Skriv ditt användarnamn</label>
     <input type="text" id="input1" placeholder="Användarnamn" />
-</form>    
-<form>
+<br /></div>
+     <div class="mellanrum">
     <label for="input2">Skriv ditt lösenord</label>
     <input type="password" id="input2" placeholder="Lösenord" />
-</form>
-    <form>
+<br />
+    </div>
+    <div class="mellanrum">
     <label for="input3">Namn</label>
     <input type="text" id="input3" placeholder="Fullständigt namn" />
-</form>
-    <form>
+<br />
+    </div>
+    <div class="mellanrum">
     <label for="input4">Adress</label>
     <input type="text" id="input4" placeholder="Din adress" />
-</form>
-    <form>
+    </div>
+        <div class="mellanrum">
+       <div class="mellanrum">
+
     <label for="input5">E-post</label>
     <input type="text" id="input5" placeholder="namn@mail.se" />
-</form>
-    <form>
-    <label for="input6">Telefonnummer</label>
-    <input type="text" id="input6" placeholder="1234567890" />
-</form>
+           <br /></div>
+            <div class="mellanrum">
     <label for="rad1">Om du vinner en biljett, vilken färg på t-shirten vill du då ha?</label><br>
     
-<form>
-    <input type="radio" id="rad1"/> <label for="rad1">Blå</label> <br>
-    <input type="radio"  id="rad2"/> <label for="rad2">Rosa</label> <br>
-    <input type="radio"  id="rad3"/> <label for="rad3">Svart</label> <br> <br>
-</form>
- 
-<form>    
+
+    <input type="radio" id="rad1" name="knapp"/> <label for="rad1">Blå</label> <br>
+    <input type="radio"  id="rad2" name="knapp"/> <label for="rad2">Rosa</label> <br>
+    <input type="radio"  id="rad3" name="knapp"/> <label for="rad3">Svart</label> <br> <br>
+            </div>
     <label for="select">Om du vinner en biljett, vilken arena vill du gå på?</label><br>
     <select id="select">
 <optgroup label="Göteborg">
@@ -171,16 +176,12 @@
 	<option>Globen</option>
 </optgroup>
 </select>
-</form>
-
-   
-    
-<form>
+    <br />
+<div class="mellanrum">
     <label for="motivation">Berätta kort om dig själv och varför du vill vinna biljetterna:</label><br>
     <textarea rows="4" id="motivation" cols="50" placeholder="Motivera..."></textarea>
-</form>    
-   
- <form>
+<br />
+            </div>
     <button>Läs villkoren igen</button> 
 	<input type="submit" value="Skicka in" />
  
