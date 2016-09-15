@@ -2,101 +2,127 @@
 <html lang="sv">
 <head>
 	<meta charset="utf-8">
-	<title>Övning 6</title>
-<style>
+	<title>Emma Lindgren</title>
+</head>
+    <style>
 
-    body {
-        font-family: 'Helvetica', sans-serif;
-        color: black;
-    }
-
-    header {
-        background-color: aqua;
-        padding: 10px;
-        display: block;
-    }
+        .container {
+        display: flex;
+        flex-direction: column;
+            font-family: 'Helvetica', sans-serif;
+        }
 
 
-    .content {
-           height: 550px;
-    }
 
-        nav {
-        background-color: gray;
-        display: inline-block;
-            float: left;
-            width: 20%;
-        height: 100%;
+        .header {
+            background-color: darkseagreen;
 
-    }
+        }
 
-        footer {
-            background-color: rosybrown;
-            display: block;
-            clear: both;
-            height: 80px;
-    }
+        .header h1 {
+            text-align: center;
+             text-transform: uppercase;
+        }
+        .main {
+            background-color: transparent;
+              display: inline-flex;
+            font-size: 14px;
+            color: beige;
+        }
 
-    main {
-        background-color: beige;
-        display: inline-block;
-        width: 50%;
-        float: left;
-        height: 100%;
-    }
+           .main p {
+         padding: 5px;
+        }
 
+        .nav {
+            background-color: aquamarine;
+          flex: 1 1 auto;
+            width: 15%;
+        }
 
-    main .bilddelen {
+        .article {
+            background-color: lightsteelblue;;
+             flex: 1 1 auto;
+            width: 60%;
+        }
+
+        .article .bild {
         margin-top: 10px;
-    }
-
-    main .bild {
-        float: left;
+            width: 150px;
+                    float: left;
         margin-right: 10px;
         padding: 10px;
     }
 
-    main .text {
-        margin-left: 5px;
-        margin-top: 20px;
-        max-width: 500px;
-    }
-
-        aside {
-        background-color: hotpink;
-            float: right;
-        height: 100%;
-            width: 30%;
+                .article p {
+       color: black;
     }
 
 
 
-</style>
-</head>
+        .aside {
+            background-color: lightgrey;
+             flex: 1 1 auto;
+            width: 25%;
+
+        }
+
+        .footer {
+            background-color: pink;
+        }
+
+        .footer .table {
+  display: table;
+            margin: auto;
+        }
+
+        .footer > .table > div > div {
+  display: table-cell;
+        margin: 10px 10px 10px 10px;}
+
+          .footer > .table > div > div > p {
+              text-align: center;
+        margin: 10px 10px 10px 10px;
+        text-transform: uppercase;
+        }
+
+    </style>
+
 <body>
 
-<header><p>header</p></header>
-    <div class="content">
-    <nav> <div class="table">
-  <div>
-    <div>Shower</div>
-    <div>Familj</div>
-  </div>
-  <div>
-    <div>Filmer</div>
-    <div>Kläder</div>
-  </div>
-</div></nav>
-    <main> <div class="bilddelen">
-    <img class ="bild" src="http://www.dileva.se/wp-content/uploads/2016/03/bokomsl-kopia.jpg">
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 
-</div> </main>
 
-    <aside><p>Aside</p></aside>
+<div class="container">
+    <div class="header"><h1>Tomas</h1></div>
+    <div class="main">
+        <div class="nav">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="article">
+            <img class ="bild" src="http://www.dileva.se/wp-content/uploads/2016/03/bokomsl-kopia.jpg">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="aside">
+         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        </div>
     </div>
-       <footer><p>footer</p></footer>
+    <div class="footer">
+        <div class="table">
+              <div>
+                <div><p>incididunt</p></div>
+                <div><p>labore</p></div>
+                <div><p>dolore</p></div>
+                <div><p>magna</p></div>
+              </div>
+          </div>
+    </div>
+</div>
+
 
 
 </body>
 </html>
+
+
+
