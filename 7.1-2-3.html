@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Emma Lindgren</title>
+</head>
+    <style>
+
+
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            border: 1px solid black;
+        }
+        .flexmode {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flexmode > div {
+              flex: 1 1 auto;
+            height: 50px;
+            padding: 15px;
+        }
+
+        .background {
+              padding: 15px;
+              height: 200px;
+              background-color: white;
+        }
+
+        .color {
+            padding: 15px;
+
+        }
+
+          .green {
+        display: none;
+    }
+     .yellow {
+        display: none;
+    }
+
+          .pink {
+        display: none;
+    }
+
+        @media (min-width: 600px) and (max-width: 1050px) {
+
+         .flexmode {
+            flex-direction: column;
+        }
+              .white {
+        display: none;
+    }
+
+        }
+
+@media (min-width: 601px) and (max-width: 750px) {
+
+          .background {
+              background-color: hotpink;
+        }
+
+         .pink {
+        display: inherit;
+    }
+
+
+       .white {
+        display: none;
+    }
+
+        }
+
+@media (min-width: 751px) and (max-width: 900px) {
+
+          .background {
+              background-color: springgreen;
+        }
+
+     .green {
+        display: inherit;
+    }
+
+    .pink {
+        display: none;
+    }
+     .yellow {
+        display: none;
+    }
+
+
+        }
+
+ @media (min-width: 900px)  {
+
+          .background {
+              background-color: yellow;
+        }
+     .yellow {
+         display: inherit;
+     }
+       .white {
+        display: none;
+    }
+
+     .green {
+        display: none;
+    }
+     .pink {
+        display: none;
+    }
+
+        }
+
+    </style>
+
+<body>
+        <div class="flexmode">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+        </div>
+        <div class="background">CHANGE BACKGROUND COLOR
+        </div>
+        <div class="color white">WHITE
+        </div>
+        <div class="color pink">PINK
+        </div>
+        <div class="color green">GREEN
+        </div>
+        <div class="color yellow">YELLOW
+        </div>
+
+
+
+
+</body>
+</html>
