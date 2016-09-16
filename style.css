@@ -60,8 +60,7 @@ a {
 }
 
 .preamble p {
-     font-family: serif;
-    font-style: italic;
+     font-size: 15px;
 }
 
 .supporting {
@@ -104,9 +103,7 @@ a {
 
 
 .design-selection {
-    width: 50%;
-    float: right;
-    margin-top: 50px;
+    width: 100%;
 }
 
 
@@ -128,10 +125,12 @@ a {
 
  ul{
    list-style: none;
+     padding: 0;
 }
 
 li {
      text-transform: uppercase;
+    font-size: 12px;
 }
 
 footer {
@@ -157,6 +156,7 @@ footer a:hover {
 
 
 .archives, .resources {
+    color: hotpink;
        font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
