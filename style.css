@@ -57,24 +57,81 @@
     font-style: italic;
 }
 
+.supporting {
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+
+}
+
+
+.supporting h3 {
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.supporting p {
+   font-family: serif;
+    font-style: italic;
+}
+
+
 .participation, .explanation, .benefits, .requirements {
-    display: inline-block;
-    width: 40%;
+    width: 80%;
+    float: left;
+    margin-left: 10%;
 }
 
 .participation {
- float: right;
 }
 
 .explanation {
- float: left;
 }
 
 .requirements {
- float: right;
 }
 
 .benefits {
- float: left;
 }
 
+
+.design-selection {
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+
+.design-selection h3 {
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.design-selection p {
+   font-family: serif;
+    font-style: italic;
+}
+
+[role=navigation] {
+   text-transform: uppercase;
+}
+
+ ul{
+   list-style: none;
+}
+
+li {
+     text-transform: uppercase;
+}
+
+footer {
+    display: inline-block;
+}
+
+.archives, .resources {
+       font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
