@@ -1,0 +1,80 @@
+    body {
+        text-align: center;
+    font-family: Verdana, sans-serif;
+    }
+
+[role=banner] {
+    background: url(https://images7.alphacoders.com/367/367671.jpg);
+    height: 400px;
+}
+
+[role=banner] h1, h2 {
+  color: #ffffff;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+[role=banner] h1 {
+     font-size: 60px;
+    border-top: white solid 1px;
+    display: inline-block;
+    clear: both !important;
+    margin-top: 12%;
+    width: 550px;
+}
+
+
+[role=banner] h2 {
+ font-size: 30px;
+    border-bottom: white solid 1px;
+    display: inherit;
+    clear: both;
+    width: 460px;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.summary {
+        font-family: serif;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+}
+
+.preamble {
+    width: 60%;
+    margin: auto;
+}
+.preamble h3 {
+     font-size: 40px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.preamble p {
+     font-family: serif;
+    font-style: italic;
+}
+
+.participation, .explanation, .benefits, .requirements {
+    display: inline-block;
+    width: 40%;
+}
+
+.participation {
+ float: right;
+}
+
+.explanation {
+ float: left;
+}
+
+.requirements {
+ float: right;
+}
+
+.benefits {
+ float: left;
+}
+
