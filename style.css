@@ -106,6 +106,7 @@
      font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
+    color: hotpink;
 }
 
 .design-selection p {
@@ -130,6 +131,7 @@ footer {
     background-color: black;
     color: white;
     width: 100%;
+    padding-top: 38px;
     padding-top: 38px;
     margin-top: 30px;
     margin-bottom: 30px;
