@@ -10,7 +10,7 @@ a {
 }
 
 [role=banner] {
-    background: url(https://images7.alphacoders.com/367/367671.jpg);
+    background: url(https://images7.alphacoders.com/367/367671.jpg) no-repeat 10px -203px;
     height: 400px;
 }
 
@@ -53,7 +53,7 @@ a {
     margin: auto;
 }
 .preamble h3 {
-    color: hotpink;
+    color: #F67258;
      font-size: 40px;
     text-transform: uppercase;
     font-weight: lighter;
@@ -71,7 +71,7 @@ a {
 
 
 .supporting h3 {
-     color: hotpink;
+     color: #F67258;
      font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
@@ -111,7 +111,7 @@ a {
      font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
-    color: hotpink;
+    color: #F67258;
 }
 
 .design-selection p {
@@ -133,6 +133,12 @@ li {
     font-size: 12px;
 }
 
+
+h3::before {
+        content: url(flmaning.png);
+    display: block;
+}
+
 footer {
     display: inline-block;
     background-color: black;
@@ -150,13 +156,13 @@ footer a {
 }
 
 footer a:hover {
-    color: hotpink;
+    color: #F67258;
     text-transform: uppercase;
 }
 
 
 .archives, .resources {
-    color: hotpink;
+    color: #F67258;
        font-size: 20px;
     text-transform: uppercase;
     font-weight: lighter;
