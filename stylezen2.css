@@ -1,0 +1,175 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+body {
+        text-align: center;
+    font-family: Verdana, sans-serif;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+[role=banner] {
+    background: url(https://images7.alphacoders.com/367/367671.jpg) no-repeat 10px -203px;
+    height: 400px;
+}
+
+[role=banner] h1, h2 {
+  color: #ffffff;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+[role=banner] h1 {
+     font-size: 60px;
+    border-top: white solid 1px;
+    display: inline-block;
+    margin-top: 11%;
+    width: 580px;
+    padding: 5px;
+}
+
+
+[role=banner] h2 {
+     font-size: 30px;
+    border-bottom: white solid 1px;
+    display: inherit;
+    width: 460px;
+    margin: auto;
+    margin-top: -5px;
+    padding: 5px;
+}
+
+.summary {
+        font-family: serif;
+    font-style: italic;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.preamble {
+    margin: auto;
+}
+.preamble h3 {
+    color: #F67258;
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.preamble p {
+        font-family: serif;
+    font-style: italic;
+}
+
+.supporting {
+
+}
+
+
+.supporting h3 {
+     color: #F67258;
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.supporting p {
+   font-family: serif;
+    font-style: italic;
+}
+
+
+.participation, .explanation, .benefits, .requirements {
+}
+
+.participation {
+}
+
+.explanation {
+}
+
+.requirements {
+}
+
+.benefits {
+}
+
+
+.design-selection {
+}
+
+
+.design-selection h3 {
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #F67258;
+}
+
+.design-selection p {
+   font-family: serif;
+    font-style: italic;
+}
+
+[role=navigation] {
+   text-transform: uppercase;
+}
+
+ ul{
+   list-style: none;
+     padding: 0;
+}
+
+li {
+     text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+h3::before {
+        content: url(flmaning.png);
+    display: block;
+}
+
+footer {
+display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 38px;
+    padding-bottom: 58px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+footer a {
+    color: white;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #F67258;
+    text-transform: uppercase;
+}
+
+
+.archives, .resources {
+    color: #F67258;
+       font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
