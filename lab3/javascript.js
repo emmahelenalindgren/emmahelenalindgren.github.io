@@ -44,11 +44,11 @@ let okColor=false;
 inputColor.addEventListener('keyup',function(event){
     if(inputColor.value.match(hexColors) !== null){
         okColor = true;
-        statusBar.innerHTML ="Godkänd färg!";
+        statusBar.innerHTML ="godkänd färg!";
     }
     else if (inputColor.value == null || inputColor.value==""){
         okColor = false;
-        statusBar.innerHTML="Ogiltig färgkod, försök igen";
+        statusBar.innerHTML="ogiltig färgkod, försök igen";
     }
 })
 // Add Color to list
@@ -59,9 +59,9 @@ addColor.addEventListener('click',function(event){
         newOption.value = userHex;
         newOption.innerHTML = userHex;
         selectColor.appendChild(newOption);
-        statusBar.innerHTML ="Färg tillagd i listan";}
+        statusBar.innerHTML ="färg tillagd i listan";}
     else {
-        statusBar.innerHTML = "Ogiltig färgkod"
+        statusBar.innerHTML = "ogiltig färgkod"
     }
 })
 
@@ -85,7 +85,7 @@ triangle.addEventListener('click', function(event){
 });
 
 triangle.addEventListener('mouseover',function(event){
-    statusBar.innerHTML = "Rita triangel med tre klick på canvas";
+    statusBar.innerHTML = "rita triangel med tre klick på canvas";
 })
 
 let ritaT = function(){
@@ -100,7 +100,7 @@ let ritaT = function(){
         context.fillRect(x1, y1, 1, 1);
         context.beginPath();
         context.moveTo(x1, y1);
-        statusBar.innerHTML = "Två klick till!";
+        statusBar.innerHTML = "två klick till!";
          abortBtn(acl);  
         
     } 
@@ -110,7 +110,7 @@ let ritaT = function(){
         y2 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x2, y2, 1, 1);
         context.lineTo(x2, y2);
-        statusBar.innerHTML = "Ett klick till!";
+        statusBar.innerHTML = "ett klick till!";
          abortBtn(acl);  
     }
     
@@ -121,7 +121,7 @@ let ritaT = function(){
         context.lineTo(x3, y3);
         context.closePath();
         context.stroke();
-        statusBar.innerHTML = "Färdig triangel!";
+        statusBar.innerHTML = "färdig triangel!";
          jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2, x3: x3, y3: y3 });
     }
 });
@@ -135,7 +135,7 @@ rectangle.addEventListener('click', function(event){
 });
 
 rectangle.addEventListener('mouseover', function (event){
-    statusBar.innerHTML = "Rita rektangel med två klick på canvas";
+    statusBar.innerHTML = "rita rektangel med två klick på canvas";
 })
 let ritaR = function(){
         let click = 0;
@@ -148,7 +148,7 @@ let ritaR = function(){
         y1 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x1, y1, 1, 1);
         context.beginPath();
-        statusBar.innerHTML = "Ett klick till!";
+        statusBar.innerHTML = "ett klick till!";
         abortBtn(acl);      
         }
         if (click === 2) {
@@ -156,7 +156,7 @@ let ritaR = function(){
         y2 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.rect(x1,y1,x2-x1,y2-y1);
         context.stroke();   
-        statusBar.innerHTML = "Färdig rektangel!";
+        statusBar.innerHTML = "färdig rektangel!";
         jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
     }
     })
@@ -171,7 +171,7 @@ circle.addEventListener('click', function(event){
 });
 
 circle.addEventListener('mouseover', function(event){
-    statusBar.innerHTML = "Rita en cirkel med två klick på canvas!";
+    statusBar.innerHTML = "rita en cirkel med två klick på canvas!";
     
 })
 
@@ -186,7 +186,7 @@ let ritaC = function(){
         y1 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x1, y1, 1, 1);
         context.beginPath(); 
-        statusBar.innerHTML = "Ett klick till!";  
+        statusBar.innerHTML = "ett klick till!";
         abortBtn(acl);  
         }
         
@@ -196,7 +196,7 @@ let ritaC = function(){
         let r = Math.sqrt(Math.pow((x2 - x1),2) +Math.pow((y2 -y1),2));   
         context.arc(x1,y1,r,0,2*Math.PI);
         context.stroke();
-        statusBar.innerHTML = "Färdig cirkel!";  
+        statusBar.innerHTML = "färdig cirkel!";
         jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
        }
     })
@@ -212,11 +212,11 @@ deleteCanvas.addEventListener('click', function(event){
 })
 deleteCanvas.addEventListener('mouseover', function(event){
     let statusBar = document.getElementById('statusbar');
-    statusBar.innerHTML = "Click to Clear Canvas"
+    statusBar.innerHTML = "klicka för att rensa Canvas"
 })
 deleteCanvas.addEventListener('click', function(event){
     let statusBar = document.getElementById('statusbar');
-    statusBar.innerHTML = "Done!"
+    statusBar.innerHTML = "done!"
 })
 
 //avbryt canvas
@@ -234,78 +234,78 @@ function abortBtn(funC){
 //statusbar vad händer text
     
 meny.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att visa menyn";
+    statusBar.innerHTML = "klicka här för att visa menyn";
 });
     
 meny.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 }); 
     
 canvas.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att rita på canvas";
+    statusBar.innerHTML = "klicka här för att rita på canvas";
 });
     
 
     
 canvas.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 });     
 
     
 rectangle.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att rita rektangel";
+    statusBar.innerHTML = "klicka här för att rita rektangel";
 });
     
 rectangle.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 });     
     
 circle.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att rita cirkel";
+    statusBar.innerHTML = "klicka här för att rita cirkel";
 });
     
 circle.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 }); 
     
 triangle.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att rita triangel";
+    statusBar.innerHTML = "klicka här för att rita triangel";
 });
     
 triangle.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 }); 
     
 deleteCanvas.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att ta bort allt på canvas";
+    statusBar.innerHTML = "klicka här för att ta bort allt på canvas";
 });
     
 deleteCanvas.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 }); 
     
 abortCanvas.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att  avbryta canvas";
+    statusBar.innerHTML = "klicka här för att avbryta canvas";
 });
     
 abortCanvas.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 });     
     
 json.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att exportera till json";
+    statusBar.innerHTML = "klicka här för att exportera till json";
 });
     
 json.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 });     
 
 colorpicker.addEventListener("mouseenter", function(event){
-    statusBar.innerHTML = "Klicka här för att välja färg";
+    statusBar.innerHTML = "klicka här för att välja färg";
 });
     
 colorpicker.addEventListener("mouseleave", function(event){
-    statusBar.innerHTML = "Status";
+    statusBar.innerHTML = "status";
 });       
     
 dropdown.style.display = "none";
