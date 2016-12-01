@@ -40,17 +40,19 @@ let jsonObj = [];
 
 
 
-let okColor=false;
-inputColor.addEventListener('keyup',function(event){
-    if(inputColor.value.match(hexColors) !== null){
-        okColor = true;
-        statusBar.innerHTML ="godkänd färg!";
-    }
-    else if (inputColor.value == null || inputColor.value==""){
-        okColor = false;
-        statusBar.innerHTML="ogiltig färgkod, försök igen";
-    }
-})
+let okColor;
+  inputColor.addEventListener('keyup', function (event) {
+            if (inputColor.value.match(hexColors) !== null) {
+                okColor = true;
+                statusBar.innerHTML = "Giltig färg!";
+                addColor.disabled = false;
+            }
+            else if (inputColor.value.match(hexColors) == null || inputColor.value == "") {
+                okColor = false;
+                statusBar.innerHTML = "ogiltig färgkod...";
+                addColor.disabled = true;
+            }
+        })
 // Add Color to list
 addColor.addEventListener('click',function(event){
     if (okColor === true){
@@ -61,7 +63,7 @@ addColor.addEventListener('click',function(event){
         selectColor.appendChild(newOption);
         statusBar.innerHTML ="färg tillagd i listan";}
     else {
-        statusBar.innerHTML = "ogiltig färgkod"
+        statusBar.innerHTML = "ogiltig färgkod..."
     }
 })
 
@@ -206,8 +208,11 @@ let ritaC = function(){
 //rensa canvas
 
 let deleteCanvas = document.getElementById('deleteCanvas');
+
 deleteCanvas.addEventListener('click', function(event){
     context.clearRect(0, 0, canvas.width, canvas.height);
+     jsonObj = [];
+        jsonText.innerHTML = '';
     
 })
 deleteCanvas.addEventListener('mouseover', function(event){
