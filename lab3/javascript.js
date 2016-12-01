@@ -19,9 +19,24 @@ let hexColors = '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$';
 let userHex;    
     
 
-let values = [];
+let jsonObj = [];
 
+ // exportera till Json
+            let exportJson = document.getElementById('json');
+            let jsonInfo = document.getElementById('jsonInfo');
+            exportJson.addEventListener('mouseover', function(event){
+                statusBar.innerHTML ="Klicka för JSON";
+            });
 
+            exportJson.addEventListener('click', function(event){
+
+                let text ="";
+                for(i = 0; i < jsonObj.length; i++){
+                  let jsobjs = JSON.stringify(jsonObj[i], null, 2)
+                  text +=jsobjs;
+                }
+                jsonInfo.innerHTML = "JSON: " + text;
+            })
 
 
 
@@ -107,6 +122,7 @@ let ritaT = function(){
         context.closePath();
         context.stroke();
         statusBar.innerHTML = "Färdig triangel!";
+         jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2, x3: x3, y3: y3 });
     }
 });
 }
@@ -141,6 +157,7 @@ let ritaR = function(){
         context.rect(x1,y1,x2-x1,y2-y1);
         context.stroke();   
         statusBar.innerHTML = "Färdig rektangel!";
+        jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
     }
     })
 }
@@ -180,7 +197,7 @@ let ritaC = function(){
         context.arc(x1,y1,r,0,2*Math.PI);
         context.stroke();
         statusBar.innerHTML = "Färdig cirkel!";  
-           
+        jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
        }
     })
 }
@@ -305,4 +322,4 @@ meny.addEventListener("click", function(event){
 
 
 
-}); 
+});

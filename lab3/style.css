@@ -80,6 +80,13 @@ select:hover {
     padding: 10px;
     margin: 5px;
 }
+
+#jsonOutput {
+    background-color: lightpink;
+    padding: 10px;
+    margin: 5px;
+    min-height: 120px;
+}
 /* canvas css */
 
 #myCanvas {
