@@ -216,7 +216,7 @@ deleteCanvas.addEventListener('mouseover', function(event){
 })
 deleteCanvas.addEventListener('click', function(event){
     let statusBar = document.getElementById('statusbar');
-    statusBar.innerHTML = "done!"
+    statusBar.innerHTML = "borta!"
 })
 
 //avbryt canvas
