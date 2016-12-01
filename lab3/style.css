@@ -1,0 +1,96 @@
+body {
+       font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
+.rubbe {
+    text-align: left;
+    padding: 10px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+h2 {
+    margin: 5px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.menu-part {
+    width: 40%;
+    display: inline-block;
+        margin-top: 10px;
+    margin-left: 10px;
+}
+.formButtons {
+       list-style-type: none;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+button {
+        font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 190px;
+}
+
+button:active { 
+    border: none;
+}
+
+button:visited { 
+    border: none;
+}
+
+button:hover {
+    background-color: lightpink;
+}
+
+select {
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: black;
+    color: lightpink;
+    padding: 10px;
+    margin: 5px;
+    width: 190px;
+}
+
+select:hover {
+    background-color: black;
+    color: lightpink;
+    
+}
+
+
+
+#input-color {
+    width: 170px;
+        font-family: "Lucida Console", Monaco, monospace;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+
+#statusbar {
+    background-color: lightpink;
+    padding: 10px;
+    margin: 5px;
+}
+/* canvas css */
+
+#myCanvas {
+    
+    display: inline-block;
+   margin: 5px;
+    float: left;
+    border: 5px solid lightpink;
+}
+
+.statusbar {
+    background-color: #000000;
+    height: 20px;
+}

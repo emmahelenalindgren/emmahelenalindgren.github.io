@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3</title>
+                <script src="javascript.js"></script> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="all">
+        <header>
+            <h1 class="rubbe">RITA DIN FIGUR</h1>
+        </header>
+             <canvas id="myCanvas"> </canvas>
+<div class="menu-part">
+     <div>
+            <h2>Välj figur och färg!</h2>
+        </div>
+        <div>
+            <button id="meny">meny</button>
+        </div>
+
+    <div id="dropdown">
+        <button id="rectangle">Rektangle</button>
+        <button id="triangle">Triangle</button>
+        <button id="circle">Circle</button>
+        <button id="abortCanvas">Abort Canvas</button>
+        <button id="deleteCanvas">Delete Canvas</button>
+        <button id="json">Exportera till JSON</button>
+    </div>
+    
+   
+       
+    <div id="colorpicker">
+        <select id="colorList">
+            <option selected disabled>Select color</option>
+            <option value="#0037ff">BLÅ</option>
+            <option value="#ff0000">RÖD</option>
+            <option value="#000000">SVART</option>
+        </select>
+        <form>
+            <input type="text" id="input-color" name="ownColor" placeholder="Välj egen färg"><br>
+        </form>
+            <button id="add-color">Lägg till färg</button>
+    </div>
+     <div id="statusbar">Status</div>
+       </div>  
+        
+        </div>
+    </body>
+</html>
